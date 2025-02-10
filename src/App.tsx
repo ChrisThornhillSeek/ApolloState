@@ -4,6 +4,7 @@ import { gql } from "@apollo/client";
 import DisplayLocations from "./components/DisplayLocations";
 import Label from "./components/Label";
 import Counter from "./components/Counter";
+import EvenFlag from "./components/EvenFlag";
 
 export const GET_LOCATIONS = gql`
   query GetLocations {
@@ -23,6 +24,7 @@ function App() {
       <MyButton title="Increment Counter" />
       <br />
       <Label title="Counter"></Label>
+      <EvenFlag />
       <br />
       <Counter />
       <hr />
